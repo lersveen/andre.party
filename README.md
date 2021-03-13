@@ -1,3 +1,3 @@
 # andre.party
 
-Jenkins site based on https://github.com/poole/poole.
+Jekyll site based on https://github.com/poole/poole.
