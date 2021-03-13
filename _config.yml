@@ -29,13 +29,15 @@ github_username:  lersveen
 keybase_username: lersveen
 paginate: 5
 
+paginate_path: "/baseurl/page:num/"
+
 # Navbar page list
 nav:
   - title: Archive
-    url: /archive
+    url: /andre.party/archive
 
   - title: About
-    url: /about
+    url: /andre.party/about
 
 # permalink: /:year/:month/:day/:title
 permalink: pretty
