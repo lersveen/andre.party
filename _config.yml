@@ -1,6 +1,6 @@
 # Setup
 title: andre.party 🎉 
-url: "https://lersveen.github.io/andre.party"
+url: "https://lersveen.github.io/"
 paginate: 1
 paginate_path: "/page:num/"
 baseurl: "/andre.party"
@@ -8,6 +8,7 @@ permalink: pretty
 
 # Gems
 plugins:
+  - jekyll-feed
   - jekyll-gist
   - jekyll-paginate
   - jekyll-seo-tag
@@ -43,9 +44,9 @@ version: 3.0.0
 # Navbar page list
 nav:
   - title: Archive
-    url: /archive
+    url: /andre.party/archive
 
   - title: About
-    url: /about
+    url: /andre.party/about
 
 github: [metadata]
