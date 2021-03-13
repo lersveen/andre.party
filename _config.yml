@@ -1,6 +1,6 @@
 # Setup
 title: andre.party 🎉 
-url: "https://lersveen.github.io/"
+url: "https://lersveen.github.io"
 paginate: 1
 paginate_path: "/page:num/"
 baseurl: "/andre.party"
