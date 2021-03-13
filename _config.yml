@@ -3,7 +3,7 @@ title: andre.party 🎉
 url: "https://lersveen.github.io/andre.party/"
 paginate: 1
 paginate_path: "/page:num/"
-baseurl: ""
+baseurl: "/andre.party"
 permalink: pretty
 
 # Gems
