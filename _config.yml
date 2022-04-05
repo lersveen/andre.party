@@ -5,6 +5,7 @@ paginate: 1
 paginate_path: "/page:num/"
 baseurl: "/"
 permalink: /:year/:month/:day/:title/
+timezone: Europe/Oslo
 
 # Gems
 plugins:
