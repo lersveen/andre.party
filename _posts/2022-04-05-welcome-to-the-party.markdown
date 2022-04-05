@@ -1,7 +1,6 @@
 ---
 layout: post
 title:  "Welcome to the party!"
-date:   2022-04-05 11:07 +0100
 categories: blog
 ---
 Hello.
