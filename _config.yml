@@ -1,6 +1,6 @@
 # Setup
 title: andre.party 🎉 
-url: "https://blog.andre.party"
+url: "https://www.andre.party"
 paginate: 1
 paginate_path: "/page:num/"
 baseurl: "/"
