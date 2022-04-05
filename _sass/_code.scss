@@ -12,6 +12,13 @@ code {
   font-size: 85%;
 }
 
+code.highlighter-rouge {
+  padding: .25em .5em;
+  color: #bf616a;
+  background-color: var(--code-bg);
+  border-radius: 3px;
+}
+
 pre {
   display: block;
   margin-top: 0;

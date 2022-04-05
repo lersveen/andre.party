@@ -1,10 +1,12 @@
 # Setup
-title: andre.party 🎉 
+title: andre.party 
+tagline: ♪┏(・o･)┛♪
 url: "https://www.andre.party"
 paginate: 1
 paginate_path: "/page:num/"
-baseurl: "/"
-permalink: /:year/:month/:day/:title/
+baseurl: ""
+permalink: /:year/:month/:day/:title
+
 timezone: Europe/Oslo
 
 # Gems
@@ -13,6 +15,7 @@ plugins:
   - jekyll-gist
   - jekyll-paginate
   - jekyll-seo-tag
+  - jekyll-avatar
 
 # Optimize Jekyll
 exclude:
@@ -26,7 +29,7 @@ exclude:
 
 sass:
   sass_dir: _sass
-  style: :compressed
+  style: compressed
 
 # Options
 
@@ -38,9 +41,6 @@ author:
   name: André Lersveen
   url: https://github.com/lersveen
   email: hello@andre.party
-
-# Custom vars
-version: 3.0.0
 
 # Navbar page list
 nav:

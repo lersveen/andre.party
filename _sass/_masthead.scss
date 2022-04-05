@@ -27,4 +27,12 @@
   float: right;
   line-height: 1.25rem;
   word-spacing: 1rem;
+
+  small:hover{
+    opacity: .8;
+  }
+
+  small.active {
+    opacity: .8;
+  }
 }

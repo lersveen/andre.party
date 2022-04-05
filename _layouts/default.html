@@ -13,7 +13,12 @@
 
           <nav class="nav">
             {% for nav in site.nav %}
-            <small><a href="{{ nav.url }}">{{ nav.title }}</a></small>
+              {% if page.url == nav.url %}
+                <small class="active"><a href="{{ nav.url }}" class="active">{{ nav.title }}</a></small>
+              {% else %}
+                <small><a href="{{ nav.url }}">{{ nav.title }}</a></small>
+              {% endif %}
+            
             {% endfor %}
           </nav>
         </h3>
@@ -22,12 +27,6 @@
       <main>
         {{ content }}
       </main>
-
-      <footer class="footer">
-        <small>
-          &copy; <time datetime="{{ site.time | date_to_xmlschema }}">{{ site.time | date: '%Y' }}</time>. All rights reserved.
-        </small>
-      </footer>
     </div>
 
     {% if site.ga_analytics %}
