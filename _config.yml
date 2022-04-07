@@ -1,6 +1,6 @@
 # Setup
 title: andre.party 
-tagline: ♪┏(・o･)┛♪
+# tagline: ♪┏(・o･)┛♪
 url: "https://www.andre.party"
 paginate: 1
 paginate_path: "/page:num/"

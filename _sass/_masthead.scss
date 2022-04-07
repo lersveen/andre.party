@@ -36,3 +36,43 @@
     opacity: .8;
   }
 }
+
+#logo {
+  margin-bottom: -6px;
+  margin-top: -35px;
+}
+
+#logo .cls-1 {
+  fill: #3af1ef;
+}
+
+@keyframes colorChange {
+  0%{fill:#3af1ef}
+  20%{fill:#3af158}
+  40%{fill:#94f13a}
+  60%{fill:#f1d93a}
+  80%{fill:#f17b3a}
+}
+
+@keyframes floatBalloon {
+  0% {
+    margin-bottom: -6px;
+    height: 35px;
+  }
+  50% { 
+    margin-bottom: -3px;
+    height: 36px;
+  }
+}
+
+#logo {
+  animation: floatBalloon 5s;
+}
+
+#balloon:checked + label #logo {
+  animation: floatBalloon 5s infinite;
+}
+
+#balloon:checked + label #logo .cls-1 {
+  animation: colorChange 3s infinite;
+}
