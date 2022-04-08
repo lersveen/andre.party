@@ -55,24 +55,34 @@
 }
 
 @keyframes floatBalloon {
-  0% {
-    margin-bottom: -6px;
-    height: 35px;
+  20% { 
+    margin-bottom: -8px;
+    height: 34px;
+    transform: rotate(-3deg);
   }
-  50% { 
-    margin-bottom: -3px;
+  60% { 
+    margin-bottom: -2px;
     height: 36px;
+    transform: rotate(6deg);
+  }
+}
+
+@keyframes floatBalloonMore {
+  50% { 
+    margin-bottom: 4px;
+    height: 38px;
+    transform: rotate(14deg);
   }
 }
 
 #logo {
-  animation: floatBalloon 5s;
+  animation: floatBalloon ease-in-out 5s;
 }
 
 #balloon:checked + label #logo {
-  animation: floatBalloon 5s infinite;
+  animation: floatBalloonMore 3s ease-in-out infinite;
 }
 
 #balloon:checked + label #logo .cls-1 {
-  animation: colorChange 3s infinite;
+  animation: colorChange 1s infinite;
 }
