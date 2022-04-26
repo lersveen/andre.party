@@ -6,11 +6,8 @@
   <body>
     <button id="toggleMode"></button>
     <script>
-
-      let dark = window.matchMedia("(prefers-color-scheme: dark)").matches;
-      let light = window.matchMedia("(prefers-color-scheme: light)").matches;
-
-      if(dark||light){mode = 'system'}
+      //default to follow system setting
+      mode = 'system'
 
       if (localStorage.getItem("mode")){
         //check if there's a saved state already
@@ -21,14 +18,19 @@
       }
 
       const btn = document.getElementById('toggleMode');
-      btn.textContent = mode;
+      btn.className = mode;
 
       //when the button is clicked, toggle the mode and save the change in local storage
       btn.onclick = function(){
         mode = (mode === 'dark') ? 'light' : (mode === 'light') ? 'system' : 'dark';
-        document.documentElement.className = mode;
-        localStorage.setItem("mode", mode);
-        btn.textContent = mode;
+        if(mode === 'system'){
+          document.documentElement.removeAttribute("class");
+          localStorage.removeItem("mode");
+        } else {
+          document.documentElement.className = mode;
+          localStorage.setItem("mode", mode);
+        }
+        btn.className = mode;
       }
     </script>
     <div class="container content">
