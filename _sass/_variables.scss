@@ -79,20 +79,25 @@ html.dark {
 
 #toggleMode {
   font-size: 16px;
-  position: absolute;
-  right: 1em;
-  top: 1em;
-  padding: 0.5em;
-  background: var(--code-bg);
+  background: none;
   color: var(--body-color);
   border: none;
-  border-radius: 1em;
   cursor: pointer;
 }
 
-#toggleMode.dark:before {content: '🌙 Dark theme';}
-#toggleMode.light:before {content: '☀️ Light theme';}
-#toggleMode.system:before {content: '🌓 System theme';}
+#toggleMode span {
+  display: none;
+  height: 1em;
+}
+
+#toggleMode span svg {
+  margin-right: 0.25em;
+}
+
+
+#toggleMode.dark span.dark {display: flex;}
+#toggleMode.light span.light {display: flex;}
+#toggleMode.system span.system {display: flex;}
 
 @media (prefers-color-scheme: dark) {
   :root {
