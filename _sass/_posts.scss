@@ -20,6 +20,7 @@
 .page-title,
 .post-title {
   margin-top: 0;
+  margin-bottom: var(--spacer);
 }
 .post-title a {
   color: inherit;
@@ -31,12 +32,17 @@
   }
 }
 
-// Meta data line below post title
-.post-date {
+// Meta data line above post title
+.post-metadata {
   display: block;
-  margin-top: -.5rem;
-  margin-bottom: var(--spacer);
+  text-transform: uppercase;
+  font-size: 14px;
   color: var(--gray-600);
+}
+
+.post-metadata span:before {
+  content: "\02022";
+  padding: 0 0.3rem;
 }
 
 
@@ -64,4 +70,39 @@
       color: var(--gray-600);
     }
   }
+}
+
+
+.posts .post {
+  margin: 0;
+  padding: 1em 0;
+  display: flex;
+  align-items: center;
+}
+
+.post+.post {
+  border-top: 1px solid var(--border-color);
+}
+
+.posts .post .post-title {
+  flex-grow: 1;
+  font-size: 18px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  margin: 0 1em;
+}
+
+.posts .post .reading-time, .posts .post .post-date, .posts .post .post-tags {
+  color: var(--gray-600);
+  display: flex;
+  white-space: nowrap;
+}
+
+.posts .post .post-tags {
+  background-color: var(--code-bg);
+}
+
+.posts .post .post-date {
+  text-transform: uppercase;
 }
