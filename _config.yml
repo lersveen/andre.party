@@ -2,7 +2,7 @@
 title: andre.party 
 # tagline: ♪┏(・o･)┛♪
 url: "https://www.andre.party"
-paginate: 1
+paginate: 100
 paginate_path: "/page:num/"
 baseurl: ""
 permalink: /:year/:month/:day/:title
@@ -44,8 +44,8 @@ author:
 
 # Navbar page list
 nav:
-  - title: Archive
-    url: /archive
+  - title: Blog
+    url: /
 
   - title: About
     url: /about
