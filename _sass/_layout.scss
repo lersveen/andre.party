@@ -15,4 +15,9 @@ footer {
   margin-top: var(--spacer-3);
   margin-bottom: var(--spacer-3);
   justify-content: center;
+  line-height: 1;
+}
+
+footer a svg {
+  height: inherit;
 }
