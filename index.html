@@ -7,7 +7,7 @@ title: Home
   {% for post in paginator.posts %}
   {% assign content = post.content %}
   <article class="post">
-    <time datetime="{{ post.date | date_to_xmlschema }}" class="post-date">{{ post.date | date: "%b %-d" }}</time>
+    <time datetime="{{ post.date | date_to_xmlschema }}" class="post-date" title="{{ post.date | date: "%B %-d %Y" }}">{{ post.date | date: "%b %-d" }}</time>
     <h2 class="post-title">
       <a href="{{ post.url | relative_url }}">{{ post.title }}</a>
     </h2>

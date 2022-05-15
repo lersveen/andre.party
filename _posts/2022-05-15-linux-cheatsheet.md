@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "How to greet an unknown linux system"
+title:  "How to greet an unknown Linux system"
 categories: blog
 tags: dev linux
 ---

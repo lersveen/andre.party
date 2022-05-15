@@ -107,4 +107,11 @@
 
 .posts .post .post-date {
   text-transform: uppercase;
+  min-width: 54px;
+}
+
+@media (max-width: 30rem) {
+  .posts .post .reading-time {
+    display: none;
+  }
 }
