@@ -9,6 +9,8 @@ Sometimes you find yourself (with an SSH connection or otherwise) in the shell o
 
 There are many ways to go about this, but here is my quick cheatsheet to get you started. Excuse the terrible analogies.
 
+---
+
 ## Hi, how are you?
 Start politely by checking how long the system has been up, load, what users are logged in and what they are doing:
 ```
@@ -16,7 +18,7 @@ w
 ```
 The command `w` combines several other Unix programs: `who`, `uptime` and `ps -a`.
 
-## Who are you? <small>(Determine OS version and hostname)</small>
+## Who are you? <small>(determine OS version and hostname)</small>
 Type any one of the following commands to find OS name, version and hostname:
 ```sh
 cat /etc/os-release
@@ -31,7 +33,7 @@ hostname
 sw_vers
 ```
 
-## What are you packing? <small>(Inspect hardware)</small>
+## What are you packing? <small>(inspect hardware)</small>
 
 If you want to know some basics about the system hardware, try these:
 ```sh
@@ -55,23 +57,23 @@ pstree | head -n 5
 ```
 The very first process in the tree should be the system manager. It's most likely `systemd`, `upstart` or `init` (SysVinit).
 
-
-### SystemD
+### List services
+ SystemD:
 ```sh
 sudo systemctl list-units --type=service --all
 ```
 
-### Upstart
+Upstart:
 ```sh
 sudo initctl list
 ```
 
-### SysVinit
+SysVinit:
 ```sh
 sudo service --status-all
 ```
 
-## But what do you really do? <small>(List running processes)</small>
+## But what do you really do? <small>(list running processes)</small>
 Get a real-time overview of running processes:
 ```
 top
@@ -83,7 +85,7 @@ ps ax
 ```
 
 
-## Anyway, what's in your bag? <small>(List installed software)</small>
+## Anyway, what's in your bag? <small>(list installed software)</small>
 
 You first need to determine the package manager. This [depends on the Linux distribution](https://en.wikipedia.org/wiki/List_of_software_package_management_systems#Linux).
 
