@@ -9,6 +9,10 @@ Sometimes you find yourself (with an SSH connection or otherwise) in the shell o
 
 There are many ways to go about this, but here is my quick cheatsheet to get you started. Excuse the terrible analogies.
 
+- Cake
+- Mushroom
+- What?
+
 ---
 
 ## Hi, how are you?
