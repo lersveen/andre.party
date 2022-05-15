@@ -49,6 +49,56 @@
   --spacer-3: calc(var(--spacer) * 3);
 }
 
+html.light {
+  --body-color: var(--gray-700);
+  --body-bg: #fff;
+
+  --heading-color: var(--gray-900);
+
+  --link-color: var(--blue);
+  --link-hover-color: #1c7ed6;
+
+  --border-color: var(--gray-300);
+
+  --code-bg: var(--gray-000);
+}
+
+html.dark {
+  --body-color: var(--gray-300);
+  --body-bg: var(--gray-800);
+
+  --heading-color: #fff;
+
+  --link-color: var(--blue-300);
+  --link-hover-color: var(--blue-400);
+
+  --border-color: rgba(255,255,255,.15);
+
+  --code-bg: var(--gray-900);
+}
+
+#toggleMode {
+  font-size: 16px;
+  background: none;
+  color: var(--body-color);
+  border: none;
+  cursor: pointer;
+}
+
+#toggleMode span {
+  display: none;
+  height: 1em;
+}
+
+#toggleMode span svg {
+  margin-right: 0.25em;
+}
+
+
+#toggleMode.dark span.dark {display: flex;}
+#toggleMode.light span.light {display: flex;}
+#toggleMode.system span.system {display: flex;}
+
 @media (prefers-color-scheme: dark) {
   :root {
     --body-color: var(--gray-300);
